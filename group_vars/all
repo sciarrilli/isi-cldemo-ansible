@@ -7,15 +7,15 @@ fabric:
     leaf01:
         asn: 65011
         fabricports:
-            swp52:
             swp53:
+            swp54:
         networks:
             "172.16.1.0/24":
     leaf02:
         asn: 65012
         fabricports:
-            swp52:
             swp53:
+            swp54:
         networks:
             "172.16.2.0/24":
     spine01:
@@ -39,14 +39,14 @@ ospf:
     leaf01:
         routedports:
             lo:
-            swp52:
             swp53:
+            swp54:
             bridge.10:
     leaf02:
         routedports:
             lo:
-            swp52:
             swp53:
+            swp54:
             bridge.10:
     spine01:
         routedports:
@@ -73,10 +73,10 @@ interfaces:
         swp4:
             mtu: "1500"
             accessvlan: "10"
-        swp52:
+        swp53:
             ipv4: "10.0.0.11"
             mtu: "1500"
-        swp53:
+        swp54:
             ipv4: "10.0.0.11"
             mtu: "1500"
     leaf02:
@@ -92,10 +92,10 @@ interfaces:
         swp4:
             mtu: "1500"
             accessvlan: "10"
-        swp52:
+        swp53:
             ipv4: "10.0.0.12"
             mtu: "1500"
-        swp53:
+        swp54:
             ipv4: "10.0.0.12"
             mtu: "1500"
     spine01:
